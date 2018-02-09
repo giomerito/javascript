@@ -1,6 +1,7 @@
 <html xmlns="htttp://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html, charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Script com JavaScript</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/cerulean/bootstrap.min.css" />
@@ -9,26 +10,26 @@
 	
 </head>
 <body>
-	<form id="formulario" class="form-group">
+	<form id="formulario">
 				
-		<div class="container">
+		<div class="form-group">
 			
-					<legend>Cálculo do IMC</legend>
+			<legend>Cálculo do IMC</legend>
+
+			<label for="kilos">Kilos: </label>
+			<input type="text" name="kilos" class="form-control" />
 		
-					<label for="kilos">Kilos: </label>
-					<input type="text" name="kilos" class="form-control" />
-				
-					<label for="metros">Metros: </label>
-					<input type="text" name="metros" class="form-control" />
-				
-					<label for="centimetros">Cm: </label>
-					<input type="text" name="centimetros" class="form-control"/>
-				
-					<label for="imc">IMC: </label>
-					<input type="text" name="imc" disabled="disabled" class="form-control"/>
-					<br>
-					<input type="button" onclick="calcularIMC();" value="Calcular" class="btn btn-primary"/>
-					<input type="reset" name="limpar" value="Limpar" class="btn btn-primary">
+			<label for="metros">Metros: </label>
+			<input type="text" name="metros" class="form-control" />
+		
+			<label for="centimetros">Cm: </label>
+			<input type="text" name="centimetros" class="form-control"/>
+		
+			<label for="imc">IMC: </label>
+			<input type="text" name="imc" disabled="disabled" class="form-control"/>
+			<br>
+			<input type="button" onclick="calcularIMC();" value="Calcular" class="btn btn-primary"/>
+			<input type="reset" name="limpar" value="Limpar" class="btn btn-primary">
 							
 		</div>
 		
